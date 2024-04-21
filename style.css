@@ -1,0 +1,147 @@
+@font-face {
+    font-family: poppins-thin;
+    src: url(./fonts/Poppins/Poppins-Thin.ttf);
+}
+
+@font-face {
+    font-family: poppins-light;
+    src: url(./fonts/Poppins/Poppins-Light.ttf);
+}
+
+@font-face {
+    font-family: poppins-regular;
+    src: url(./fonts/Poppins/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: poppins-bold;
+    src: url(./fonts/Poppins/Poppins-Bold.ttf);
+}
+
+@font-face {
+    font-family: poppins-black;
+    src: url(./fonts/Poppins/Poppins-Black.ttf);
+}
+
+:root {
+    --red: hsl(0, 78%, 62%);
+    --cyan: hsl(180, 62%, 55%);
+    --orange: hsl(34, 97%, 64%);
+    --blue: hsl(212, 86%, 64%);
+    --very-dark-blue: hsl(234, 12%, 34%);
+    --grayish-blue: hsl(229, 6%, 66%);
+    --very-light-gray: hsl(0, 0%, 98%);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    font-family: poppins-regular;
+    background-color: var(--very-light-gray);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    width: 80%;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.heading-light {
+    font-family: poppins-thin;
+    font-size: 1.5rem;
+    color: var(--very-dark-blue);
+    margin-bottom: 0;
+}
+
+.heading-bold {
+    font-family: poppins-bold;
+    font-size: 1.5rem;
+    color: var(--very-dark-blue);
+    margin-top: 0;
+}
+
+.heading-text {
+    font-family: poppins-regular;
+    color: var(--grayish-blue);
+    font-weight: 400;
+}
+
+main {
+    width: 80%;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.cards-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    /* margin: auto; */
+    /* border: 1px solid black; */
+}
+
+.single-card-container {
+    /* height: 25%; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.dual-card-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.card {
+    /* width: 100%; */
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.5rem;
+    background-color: white;
+    padding: 1rem 2rem;
+    border-radius: .5rem;
+    box-shadow:
+        -1px 0px 5px var(--grayish-blue),
+        1px 0px 5px var(--grayish-blue),
+        0px 5px 15px var(--grayish-blue);
+}
+
+.card-heading {
+    color: var(--very-dark-blue);
+}
+
+.card-text {
+    font-family: poppins-regular;
+    color: var(--grayish-blue);
+    font-weight: 200;
+}
+
+.card-icon {
+    text-align: right;
+}
+
+.top-border-cyan {
+    border-top: 5px solid var(--cyan);
+}
+
+.top-border-red {
+    border-top: 5px solid var(--red);
+}
+
+.top-border-orange {
+    border-top: 5px solid var(--orange);
+}
+
+.top-border-blue {
+    border-top: 5px solid var(--blue);
+}
